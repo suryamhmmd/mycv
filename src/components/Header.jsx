@@ -65,7 +65,6 @@ class Header extends Component {
 
     render() {
         return (
-            // <div className="col-12" id={this.state.backgroundNavbar ? 'navbar-scrolled' : 'navbar'} style={{top: this.state.top}} >
             <Navbar className={
                 this.state.backgroundNavbar ? 'navbar fixed-top navbar-light bg-light shadow-sm p-3 bg-white navbar-scrolled' :
                 'navbar fixed-top navbar-light bg-transparent p-3 navbar-default'} light expand="md">

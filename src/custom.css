@@ -2,8 +2,6 @@
     scroll-behavior: smooth;
 }
 
-
-
 .navbar-default {
     transition: background-color 0.3s;
 }
@@ -32,7 +30,8 @@
 }
 
 .title-main{
-    margin-top: 0px
+    margin-top: 0px;
+    color: white;
 }
 
 .img-title{

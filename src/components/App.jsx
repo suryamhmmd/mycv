@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import FirstProject from './FirstProject'
 import SecondProject from './SecondProject'
@@ -8,23 +8,37 @@ import SecondProject from './SecondProject'
 import Home from './Home'
 
 
-class App extends Component {
+// class App extends Component {
     
-    render() {
+//     render() {
 
-        return (
-            <div >
-                <BrowserRouter>
-                    <Switch>
-                        <Route path="/" exact component={Home}/>
-                        <Route path="/Event_Management" component={FirstProject}/>
-                        <Route path="/bengkel_online" component={SecondProject}/>
-                    </Switch>
-                </BrowserRouter>
-            </div>
+//         return (
+//             <div >
+//                 <BrowserRouter>
+//                     <Switch>
+//                         <Route path="/" exact component={Home}/>
+//                         <Route path="/Event_Management" component={FirstProject}/>
+//                         <Route path="/bengkel_online" component={SecondProject}/>
+//                     </Switch>
+//                 </BrowserRouter>
+//             </div>
             
-        )
-    }
+//         )
+//     }
+// }
+
+const App = () => {
+    return(
+        <div>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" exact component={Home}/>
+                <Route path="/Event_Management" component={FirstProject}/>
+                <Route path="/bengkel_online" component={SecondProject}/>
+            </Switch>
+        </BrowserRouter>
+    </div>
+    )
 }
 
 export default App

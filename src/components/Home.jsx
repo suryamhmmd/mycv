@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import Content from './Content'
 import About from './About'
 import Experience from './Experience'
@@ -9,18 +9,38 @@ import Header from './Header'
 import {Helmet} from 'react-helmet'
 
 
-export class Home extends Component {
+// export class Home extends Component {
+//     render() {
+//         return (
+//             <div>
+//                 <Helmet>
+//                     <title>{document.title}</title>
+//                         <meta
+//                             name="Surya Muhammad CV"
+//                         />
+//                         <meta name="keywords" content="react, developer, jakarta, bandung, indonesia, mysql" />
+//                 </Helmet>
+//                 <div>
+//                     <Header />
+//                     <Content />
+//                     <About/>
+//                     <Experience/>
+//                     <Skills/>
+//                     <Portofolio/>
+//                     <Contact/>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
 
-
-    render() {
-        return (
-            <div>
-                <Helmet>
-                    <title>{document.title}</title>
-                        <meta
-                            name="Surya Muhammad CV"
-                        />
-                        <meta name="keywords" content="react, developer, jakarta, bandung, indonesia, mysql" />
+const Home = () => {
+    return (
+        <div>
+            <Helmet>
+                <title>{document.title}</title>
+                    <meta name="Surya Muhammad CV"/>
+                    <meta name="keywords" content="react, developer, jakarta, bandung, indonesia, mysql" />
                 </Helmet>
                 <div>
                     <Header />
@@ -31,9 +51,8 @@ export class Home extends Component {
                     <Portofolio/>
                     <Contact/>
                 </div>
-            </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Home

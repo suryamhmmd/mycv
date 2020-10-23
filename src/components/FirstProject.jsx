@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { Component } from 'react'
 import Header2 from './Header2'
 // import img2 from '../img/lets-eat.png'
